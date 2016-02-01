@@ -18,7 +18,8 @@
         android:layout_height="wrap_content"
         android:text="facebook"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="btnranking"/>
 
     <Button
         android:id="@+id/google"
@@ -26,7 +27,8 @@
         android:layout_height="wrap_content"
         android:text="google"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="btnranking"/>
 
     <Button
         android:id="@+id/anonimo"
@@ -34,6 +36,7 @@
         android:layout_height="wrap_content"
         android:text="anónimo"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="btnranking"/>
 
 </LinearLayout>
