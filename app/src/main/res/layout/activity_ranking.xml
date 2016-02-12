@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
                     android:id="@+id/imageView2"
-                    android:src="@drawable/playmate1"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"
                     />
@@ -60,7 +60,7 @@
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView3"
-                    android:src="@drawable/playmate2"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -69,7 +69,7 @@
                     android:layout_height="100dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView4"
-                    android:src="@drawable/playmate3"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
             </LinearLayout>
@@ -85,7 +85,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView5"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -94,7 +94,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView6"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -103,7 +103,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView7"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
             </LinearLayout>
@@ -119,7 +119,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView8"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -128,7 +128,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView9"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -137,7 +137,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView10"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
             </LinearLayout>
@@ -153,7 +153,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView11"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -162,7 +162,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView12"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
 
@@ -171,7 +171,7 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:id="@+id/imageView13"
-                    android:src="@drawable/playmate4"
+                    android:src="@android:drawable/ic_menu_camera"
                     android:scaleType="fitXY"
                     android:layout_margin="10dp"/>
             </LinearLayout>

@@ -28,5 +28,5 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView14"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/splash" />
+        android:src="@android:drawable/ic_menu_camera" />
 </LinearLayout>
