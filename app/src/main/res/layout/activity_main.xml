@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="app.playmate.MainActivity"
     android:orientation="vertical">
-
+ 
 
 
 
