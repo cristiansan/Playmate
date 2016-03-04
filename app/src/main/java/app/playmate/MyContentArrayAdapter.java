@@ -45,7 +45,7 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
 
 
         ProgressBar progressBar = (ProgressBar)rowView.findViewById(R.id.progress_content);
-        textViewTitle.setText(content.getNombre()+" "+ content.getApellido());
+        textViewTitle.setText(content.getNombre()+" "+ content.getApellido()+" - "+content.getPais());
         //textViewDescription.setText("" + content.getFechaNacimiento().toString());
 
 
