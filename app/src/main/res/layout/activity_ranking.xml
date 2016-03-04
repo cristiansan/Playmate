@@ -11,7 +11,8 @@
     tools:context="app.playmate.MainActivity"
     android:orientation="vertical"
     android:gravity="top"
-    android:onClick="btntofoto">
+    >
+    <!--android:onClick="btntofoto"-->
 
     <!--
     <ScrollView

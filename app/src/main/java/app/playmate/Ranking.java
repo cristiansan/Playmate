@@ -1,10 +1,8 @@
 package app.playmate;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
@@ -48,9 +46,9 @@ public class Ranking extends AppCompatActivity {
 
     }
 
-    public void btntofoto(View v)
+ /*   public void btntofoto(View v)
     {
         Intent intent = new Intent(getApplicationContext(), Foto.class);
         startActivity(intent);
-    }
+    }*/
 }

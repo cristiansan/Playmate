@@ -1,12 +1,10 @@
 package app.playmate;
 
-import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.Serializable;
@@ -29,9 +27,7 @@ public class Competitor implements Serializable, Parcelable {
 		
 	}
 
-
     public Competitor(JSONObject jsonObject){
-
 
             try{
 
@@ -49,10 +45,7 @@ public class Competitor implements Serializable, Parcelable {
                     JSONObject imagen= jsonArray.getJSONObject(i);
                     CompetitorImage competitorImage= new CompetitorImage(imagen);
                     imagenes[i]= competitorImage;
-
                 }
-
-
 
             }catch (Exception e){
                 Log.d("Competitor",e.getLocalizedMessage());

@@ -1,8 +1,6 @@
 package app.playmate;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,12 +41,12 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
 
         ImageView imageView= (ImageView) rowView.findViewById(R.id.image);
         TextView textViewTitle = (TextView) rowView.findViewById(R.id.title);
-        TextView textViewDescription = (TextView) rowView.findViewById(R.id.description);
+       // TextView textViewDescription = (TextView) rowView.findViewById(R.id.description);
 
 
         ProgressBar progressBar = (ProgressBar)rowView.findViewById(R.id.progress_content);
         textViewTitle.setText(content.getNombre()+" "+ content.getApellido());
-        textViewDescription.setText("" + content.getFechaNacimiento().toString());
+        //textViewDescription.setText("" + content.getFechaNacimiento().toString());
 
 
 
