@@ -1,5 +1,6 @@
 package app.playmate;
 
+import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -19,6 +20,8 @@ public class CompetitorImage implements Serializable, Parcelable {
     private String imageLink;
     private Date lastUpdate;
     private Boolean deleted;
+
+    private Bitmap image;
 
 
     public CompetitorImage(){
@@ -72,6 +75,13 @@ public class CompetitorImage implements Serializable, Parcelable {
 
     public void setDeleted(Boolean deleted) {
         this.deleted = deleted;
+    }
+
+    public Bitmap getImage() {
+        return image;
+    }
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 
     @Override

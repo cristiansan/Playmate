@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/grey"
+    android:showDividers="beginning|none|middle|end" android:paddingLeft="5dp" android:paddingRight="5dp">
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id" />
+    -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title" android:textColor="@color/text_black_title" android:textSize="@dimen/content_title_size"
+        android:text="Escape Perfecto - Programa 45 (23-01-2015)" android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/image"
+            android:contentDescription="@string/image_alternative_text"
+             android:src="@drawable/topgame" android:adjustViewBounds="true"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_content" android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+
+        <!--
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/border"
+            android:layout_gravity="center"
+            android:id="@+id/item_border"
+            android:contentDescription="@string/image_alternative_text"
+            android:adjustViewBounds="true"     android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+        -->
+
+     </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:text="Un programa impresionante de viernes. No te lo pierdas."
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp" />
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLink" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/link" />
+
+    -->
+</LinearLayout>

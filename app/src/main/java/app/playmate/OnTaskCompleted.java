@@ -10,5 +10,7 @@ public interface OnTaskCompleted {
 
     void onTaskCompleted(Object s);
 
+    void onTaskCompleted(Object s, Object o, ProgressBar progressBar);
+
 
 }

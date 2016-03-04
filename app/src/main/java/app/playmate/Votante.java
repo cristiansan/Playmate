@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -63,8 +64,10 @@ public class Votante extends AppCompatActivity implements  OnTaskCompleted{
 
     }
 
+    @Override
+    public void onTaskCompleted(Object s, Object o, ProgressBar progressBar) {
 
-
+    }
 
 
 }
