@@ -11,6 +11,8 @@
     android:orientation="vertical">
 
 
+
+
     <Button
         android:id="@+id/playmate"
         android:onClick="btnplaymate"
