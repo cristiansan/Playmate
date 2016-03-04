@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:id="@+id/image"
             android:contentDescription="@string/image_alternative_text"
-             android:src="@drawable/topgame" android:adjustViewBounds="true"
+             android:src="@drawable/playboy_logo" android:adjustViewBounds="true"
             android:layout_gravity="center" />
 
         <ProgressBar
@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:padding="5dp"
-            android:id="@+id/title" android:textColor="#737272" android:textSize="30dp"
+            android:id="@+id/title" android:textColor="#737272" android:textSize="25dp"
             android:text="Pamella" android:textStyle="bold"
             android:background="@color/grey"
             android:gravity="center_horizontal"
