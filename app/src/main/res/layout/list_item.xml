@@ -33,7 +33,7 @@
             android:layout_margin="5dp"
             android:padding="5dp"
             android:id="@+id/title" android:textColor="#737272" android:textSize="25dp"
-            android:text="Pamella" android:textStyle="bold"
+            android:text="Nombre y Edad" android:textStyle="bold"
             android:background="@color/grey"
             android:gravity="center_horizontal"
             android:layout_marginBottom="2dp"
