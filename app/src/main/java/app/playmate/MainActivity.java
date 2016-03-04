@@ -7,6 +7,10 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    //public static final String urlServer="http://prod.telinformovil.com.ar";
+    public static final String urlServer="http://dev.telinformovil.com.ar";
+    public static final String path="/MobileBroker";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
