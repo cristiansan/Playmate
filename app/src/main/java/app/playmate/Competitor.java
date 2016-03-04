@@ -23,7 +23,7 @@ public class Competitor implements Serializable, Parcelable {
     private String biografia;
     private CompetitorImage[] imagenes;
 
-
+    //hola
 
 	public Competitor(){
 		
