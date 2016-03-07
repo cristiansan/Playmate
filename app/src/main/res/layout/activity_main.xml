@@ -12,20 +12,52 @@
 
 
 
-
-    <Button
-        android:id="@+id/playmate"
-        android:onClick="btnplaymate"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Playmate \n(subí tu foto)"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content"
+        android:text="Playmate (subí tu foto)"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal|bottom" />
 
-    <Button
-        android:id="@+id/votante"
-        android:onClick="btnvotante"
+        <Button
+            android:id="@+id/playmate"
+            android:onClick="btnplaymate"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            android:background="@drawable/pasarela"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+        <Button
+            android:id="@+id/votante"
+            android:onClick="btnvotante"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/vota"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Votá \n(y participá por un viaje a las Bahamas)"
-        android:layout_weight="1"/>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Votá (y participá por un viaje a las Bahamas)"
+        android:textSize="25dp"
+        android:id="@+id/textView3" />
+
+
 </LinearLayout>

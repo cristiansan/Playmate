@@ -39,7 +39,7 @@
             android:layout_marginBottom="2dp"
             android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal|bottom"
-            android:drawableEnd="@drawable/flag_ar"
+            android:drawableEnd="@drawable/flag_br"
             android:drawablePadding="2dp"/>
 
         <!--
