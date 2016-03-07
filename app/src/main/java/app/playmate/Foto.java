@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 public class Foto extends AppCompatActivity  implements OnTaskCompleted{
 
@@ -20,12 +21,18 @@ public class Foto extends AppCompatActivity  implements OnTaskCompleted{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
         competitor=(Competitor)getIntent().getParcelableExtra("competitor");
 
+        setTitle(competitor.getNombre()+" "+ competitor.getApellido());
         setContentView(R.layout.activity_foto);
 
         imageView=(ImageView)findViewById(R.id.imageView2);
         progressBar = (ProgressBar)findViewById(R.id.progress_content);
+
+        TextView textViewBiography= (TextView)findViewById(R.id.textViewBiography);
+        textViewBiography.setText(competitor.getBiografia());
 
         if(competitor.getImagenes()!=null && competitor.getImagenes().length<2){
             ImageView imageViewl=(ImageView)findViewById(R.id.imageViewl);

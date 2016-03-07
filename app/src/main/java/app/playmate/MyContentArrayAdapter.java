@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -45,7 +46,7 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
 
 
         ProgressBar progressBar = (ProgressBar)rowView.findViewById(R.id.progress_content);
-        textViewTitle.setText(content.getNombre()+" "+ content.getApellido()+" - "+content.getPais());
+        textViewTitle.setText(content.getNombre() + " " + content.getApellido() + " - " + obtenerEdad(content.getFechaNacimiento()));
         //textViewDescription.setText("" + content.getFechaNacimiento().toString());
 
 
@@ -74,6 +75,15 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
         return rowView;
     }
 
+
+    public int obtenerEdad(Date fechaNacimiento){
+        long today= new Date().getTime();
+        long birt=fechaNacimiento.getTime();
+
+        long diff= today-birt;
+        long div=31536000000L;
+        return (int)(diff/(div));
+    }
 
     @Override
          public void onTaskCompleted(Object s) {
