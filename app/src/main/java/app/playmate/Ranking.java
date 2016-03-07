@@ -1,15 +1,17 @@
 package app.playmate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 
-public class Ranking extends AppCompatActivity {
+public class Ranking extends AppCompatActivity implements AbsListView.OnItemClickListener{
 
 
     /**
@@ -43,8 +45,28 @@ public class Ranking extends AppCompatActivity {
         mAdapter = new MyContentArrayAdapter(getApplicationContext(), arrayList);
         ((AdapterView<ListAdapter>) mListView).setAdapter(mAdapter);
 
+        // Set OnItemClickListener so we can be notified on item clicks
+        mListView.setOnItemClickListener(this);
+
 
     }
+
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        Parcelable[] competitors=getIntent().getParcelableArrayExtra("competitors");
+
+        if(competitors!=null && competitors.length > position){
+            Intent intent = new Intent(getApplicationContext(), Foto.class);
+            intent.putExtra("competitor",competitors[position]);
+            startActivity(intent);
+        }
+
+
+    }
+
+
 
  /*   public void btntofoto(View v)
     {
