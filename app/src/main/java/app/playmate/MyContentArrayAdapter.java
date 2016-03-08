@@ -49,6 +49,13 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
         textViewTitle.setText(content.getNombre() + " " + content.getApellido() + " - " + obtenerEdad(content.getFechaNacimiento()));
         //textViewDescription.setText("" + content.getFechaNacimiento().toString());
 
+        ImageView flag=(ImageView)rowView.findViewById(R.id.flag);
+
+        int resId=getContext().getResources().getIdentifier("flag_"+content.getPais() , "drawable", getContext().getPackageName());
+        if(resId!=0){
+            flag.setImageResource(resId);
+        }
+
 
 
 

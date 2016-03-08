@@ -37,10 +37,15 @@
             android:text="Nombre y Edad" android:textStyle="bold"
             android:background="@color/grey"
             android:gravity="center_horizontal"
-            android:layout_marginTop="5dp"
             android:layout_gravity="center_horizontal|bottom"
-            android:drawableEnd="@drawable/flag_br"
+
             android:drawablePadding="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content" android:id="@+id/flag"
+            android:layout_height="wrap_content" android:src="@drawable/flag_br" android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp" />
 
         <!--
         <ImageView
