@@ -11,13 +11,7 @@
     android:orientation="vertical">
 
 
-    <Button
-        android:id="@+id/newuser"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:layout_alignParentBottom="true"
-        />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,23 +23,27 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp" />
 
-    <Button
-        android:id="@+id/adjuntar"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Adjuntar Foto"
-        android:layout_below="@+id/editText6"
-        android:layout_centerHorizontal="true" />
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Nombre y Apellido"
+        android:hint="Nombre"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/editTextNombre"
         android:layout_below="@+id/textView"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Apellido"
+        android:ems="10"
+        android:id="@+id/editTextApellido"
+        android:layout_below="@+id/editTextNombre"
 
         />
 
@@ -55,27 +53,56 @@
         android:inputType="date"
         android:hint="Fecha Nac."
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText4"
+        android:id="@+id/editTextFechaNac"
+        android:layout_below="@+id/editTextApellido"
         android:layout_centerHorizontal="true" />
 
+    <!--
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nacionalidad"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText3"
+        android:id="@+id/editTextPais"
+        android:layout_below="@+id/editTextFechaNac"
         android:layout_centerHorizontal="true" />
-
+    -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:hint="Email"
         android:ems="10"
-        android:id="@+id/editText6"
-        android:layout_below="@+id/editText5"
+        android:id="@+id/editTextMail"
+        android:layout_below="@+id/editTextFechaNac"
         android:layout_centerHorizontal="true" />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/editTextMail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--
+    <Button
+        android:id="@+id/adjuntar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjuntar Foto"
+        android:layout_below="@+id/editText6"
+        android:layout_centerHorizontal="true" />
+    -->
+
+    <Button
+        android:id="@+id/newuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_alignParentBottom="true"
+        />
+
 
 
 </RelativeLayout>

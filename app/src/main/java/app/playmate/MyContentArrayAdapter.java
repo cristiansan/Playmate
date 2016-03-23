@@ -119,5 +119,10 @@ public class MyContentArrayAdapter extends ArrayAdapter<Competitor> implements O
 
     }
 
+    @Override
+    public void onTaskPutCompleted(Object s) {
+
+    }
+
 
 }

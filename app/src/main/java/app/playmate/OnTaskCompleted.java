@@ -12,5 +12,6 @@ public interface OnTaskCompleted {
 
     void onTaskCompleted(Object s, Object o, ProgressBar progressBar);
 
+    void onTaskPutCompleted(Object s);
 
 }

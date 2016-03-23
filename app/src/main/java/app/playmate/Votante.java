@@ -69,5 +69,10 @@ public class Votante extends AppCompatActivity implements  OnTaskCompleted{
 
     }
 
+    @Override
+    public void onTaskPutCompleted(Object s) {
+
+    }
+
 
 }

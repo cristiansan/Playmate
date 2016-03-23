@@ -138,5 +138,10 @@ public class Foto extends AppCompatActivity  implements OnTaskCompleted{
 
     }
 
+    @Override
+    public void onTaskPutCompleted(Object s) {
+
+    }
+
 
 }

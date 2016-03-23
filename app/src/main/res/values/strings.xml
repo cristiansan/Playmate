@@ -8,4 +8,60 @@
     <color name="grey">#F0F0F0</color>
     <color name="text_black_title">#575558</color>
     <string name="image_alternative_text">Imagen</string>
+
+
+    <string-array name="country_array">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Canadá</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>Estados Unidos</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>México</item>
+        <item>Nicaragua</item>
+        <item>Panamá</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Puerto Rico</item>
+        <item>República Dominicana</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string-array name="country_iso_array">
+        <item>ar</item>
+        <item>bo</item>
+        <item>br</item>
+        <item>ca</item>
+        <item>cl</item>
+        <item>co</item>
+        <item>cr</item>
+        <item>cu</item>
+        <item>ec</item>
+        <item>us</item>
+        <item>sv</item>
+        <item>gt</item>
+        <item>ht</item>
+        <item>hn</item>
+        <item>mx</item>
+        <item>ni</item>
+        <item>pa</item>
+        <item>py</item>
+        <item>pe</item>
+        <item>pr</item>
+        <item>do</item>
+        <item>uy</item>
+        <item>ve</item>
+    </string-array>
+
+
+
 </resources>

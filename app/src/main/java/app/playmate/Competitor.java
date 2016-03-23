@@ -5,6 +5,7 @@ import android.os.Parcelable;
 import android.util.Log;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.Serializable;
@@ -19,6 +20,9 @@ public class Competitor implements Serializable, Parcelable {
 	private Date fechaNacimiento;
     private String pais;
     private String biografia;
+    private String mail;
+    private String user2;
+
     private CompetitorImage[] imagenes;
 
     //hola
@@ -111,11 +115,44 @@ public class Competitor implements Serializable, Parcelable {
         this.imagenes = imagenes;
     }
 
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getUser2() {
+        return user2;
+    }
+
+    public void setUser2(String user2) {
+        this.user2 = user2;
+    }
+
     @Override
 	public String toString() {
 		return "id: "+ id +" nombre: "+ nombre + " apellido: "+ apellido+ " fechaNacimiento: "+ fechaNacimiento+ " pais: "+ pais+ " biografia: "+ biografia+ " imagenes: "+ imagenes;
 	}
 
+    public JSONObject toJSon() throws JSONException{
+        JSONObject jsonObject = new JSONObject();
+
+
+        jsonObject.put("nombre", nombre);
+        jsonObject.put("apellido",apellido );
+        jsonObject.put("fechaNacimiento",fechaNacimiento.getTime() );
+        jsonObject.put("paisId", pais );
+        jsonObject.put("biografia", biografia );
+        jsonObject.put("aplicacionName","playmate");
+        jsonObject.put("mail",mail);
+        jsonObject.put("user2",user2);
+
+        return jsonObject;
+
+
+    }
 
     @Override
     public int describeContents() {
